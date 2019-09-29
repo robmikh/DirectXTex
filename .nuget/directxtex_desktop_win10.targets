@@ -11,6 +11,9 @@
   <PropertyGroup Condition="'$(PlatformTarget)' == 'x64'">
     <_NuGetPlatform>x64</_NuGetPlatform>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(PlatformTarget)' == 'ARM64'">
+    <_NuGetPlatform>ARM64</_NuGetPlatform>
+  </PropertyGroup>
   <PropertyGroup Condition="'$(_NuGetPlatform)' == ''">
     <_NuGetPlatform>$(Platform)</_NuGetPlatform>
   </PropertyGroup>
